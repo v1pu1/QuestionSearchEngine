@@ -117,9 +117,8 @@ def calculate_sorted_order_of_documents(query_terms):
 
 
 app = Flask(__name__)
-import os
-SECRET_KEY = os.urandom(32)
-app.config['SECRET_KEY'] = SECRET_KEY
+
+app.config['SECRET_KEY'] = "VIP_KEY"
 
 
 class SearchForm(FlaskForm):
