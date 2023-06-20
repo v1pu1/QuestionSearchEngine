@@ -4,13 +4,13 @@ from flask import Flask, render_template, request, jsonify
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField
 
-VOCAB_PATH = "/home/wet_bed/code/projects/questionsearchengine/tfidf/vocab.txt"
-DOCUMENTS_PATH = "/home/wet_bed/code/projects/questionsearchengine/tfidf/documents.txt"
-INVERTED_INDEX_PATH = "/home/wet_bed/code/projects/questionsearchengine/tfidf/inverted-index.txt"
-IDF_VALUES_PATH = "/home/wet_bed/code/projects/questionsearchengine/tfidf/idf-values.txt"
-QINDEX_PATH = "/home/wet_bed/code/projects/questionsearchengine/Quesdata/Qindex.txt"
-INDEX_PATH = "/home/wet_bed/code/projects/questionsearchengine/Quesdata/index.txt"
-DATA_FOLDER_PATH = "/home/wet_bed/code/projects/questionsearchengine/Quesdata/data"
+VOCAB_PATH = "tfidf/vocab.txt"
+DOCUMENTS_PATH = "tfidf/documents.txt"
+INVERTED_INDEX_PATH = "tfidf/inverted-index.txt"
+IDF_VALUES_PATH = "tfidf/idf-values.txt"
+QINDEX_PATH = "Quesdata/Qindex.txt"
+INDEX_PATH = "Quesdata/index.txt"
+DATA_FOLDER_PATH = "Quesdata/data"
 
 def find_encoding(fname):
     r_file = open(fname, 'rb').read()
